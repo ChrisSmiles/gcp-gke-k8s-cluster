@@ -6,7 +6,7 @@ terraform {
     }
   }
   backend "gcs" {
-    bucket = "tf-state-kube-project-344514"
+    bucket = "tf-state-kube-project-888888"
     prefix = "gke"
   }
 }
