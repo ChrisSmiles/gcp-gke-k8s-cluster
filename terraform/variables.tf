@@ -12,3 +12,8 @@ variable "k8s_nodes" {
   description = "Map of K8s node configuration"
   type        = map(any)
 }
+
+variable "bucket_name" {
+  description = "The name of the Google Cloud Storage bucket. Must be globally unique."
+  default = ""
+}
