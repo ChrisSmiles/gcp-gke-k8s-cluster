@@ -1,9 +1,3 @@
-# Create a Google Cloud Storage Bucket
-resource "google_storage_bucket" "bucket" {
-  name          = lower("${var.bucket_name}")
-  location      = var.region
-}
-
 resource "google_compute_network" "vpc_network" {
   name                    = "${var.project_name}-network"
   auto_create_subnetworks = false
